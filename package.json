@@ -1,0 +1,43 @@
+{
+  "name": "chance-deck",
+  "version": "0.1.0",
+  "description": "Chance.js mixin for deck (playing cards) related functions",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "scripts": {
+    "test": "istanbul cover --print detail test/*.js",
+    "posttest": "istanbul check-coverage --statement 100 --branch 100"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leesei/chance-deck.git"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "chance",
+    "chancejs",
+    "chancejs-mixin",
+    "deck",
+    "deal",
+    "playing cards"
+  ],
+  "author": "leesei <leesei@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leesei/chance-deck/issues"
+  },
+  "homepage": "https://github.com/leesei/chance-deck#readme",
+  "devDependencies": {
+    "chance": "^1.0.1",
+    "istanbul": "^0.4.2",
+    "lodash.union": "^4.2.0",
+    "tape": "^4.4.0"
+  },
+  "peerDependencies": {
+    "chance": "^1.0.1"
+  }
+}
