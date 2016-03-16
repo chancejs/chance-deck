@@ -17,6 +17,9 @@ test('validate built-in decks', function (t) {
   t.equal(chance_deck.full_deck.length, 54, '# of cards');
   t.throws(_ => chance_deck.full_deck[0] = 1, TypeError, 'should be read-only');
 
+  t.equal(chance_deck.full_deck[52], '🃏', 'black joker');
+  t.equal(chance_deck.full_deck[53], '🃟', 'white joker');
+
   t.end();
 });
 
@@ -42,7 +45,6 @@ test('distribute custom deck', function (t) {
 
 test('deal 4 hands', function (t) {
   const result = chance.deal({ hands: 4 });
-  console.log(chance.pickset(chance_deck.full_deck, 5));
 
   t.equal(Object.keys(result).length, 4, '4 hands, no stock');
   t.equal(result[0].length, 13, 'equal portion');
