@@ -62,5 +62,5 @@ chance_deck.full_deck[53] === '🃟';
 
 ## Reference
 
-[Playing card - Wikiwand](https://www.wikiwand.com/en/Playing_card)  
+[Playing cards in Unicode - Wikiwand](https://www.wikiwand.com/en/Playing_cards_in_Unicode)
 [Standard 52-card deck - Wikiwand](https://www.wikiwand.com/en/Standard_52-card_deck)
